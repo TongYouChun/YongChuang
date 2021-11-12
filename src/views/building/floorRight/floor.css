@@ -1,0 +1,65 @@
+/* 智慧楼宇 右 楼层 css */
+.floor{
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	width: 100%;
+	 user-select: none;
+	 opacity: 0;
+}
+
+.floor .floor_li{
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+}
+
+.floor .floor_li .floor_text{
+	font-size: 12px;
+	color: #fff;
+}
+.floor .floor_li .floor_te{
+	font-weight: 700;
+}
+.floor .floor_li .floor_ico{
+	margin-left: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 16px;
+}
+.floor .floor_li .floor_ico .floor_img{
+	display: flex;
+	flex-direction: column;
+	width: 16px;
+	align-items: center;
+}
+
+.floor .floor_li .floor_ico .floor_img .imgs1{
+	width: 16px;
+	height: 22px;
+}
+.floor .floor_li .floor_ico .floor_img .imgs2{
+	width: 12px;
+	height: 12px;
+}
+.floor .floor_li .floor_ico .floor_Line{
+	margin: 1px 0;
+	width: 1px;
+	height: 34px;
+	background-image: url(../../../../public/imges/building/ico/xian.png);
+	background-size: 100% 100%;
+}
+
+
+.floor .floor_li .floor_ico .floor_te{
+	width: 2px;
+	background-image: url(../../../../public/imges/building/ico/xian2.png);
+	background-size: 100% 100%;
+}
+
+@keyframes floorBottom
+{
+	from {bottom: -1000px;}
+	to {bottom: 5px;}
+}

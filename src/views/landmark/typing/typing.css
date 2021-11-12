@@ -1,0 +1,32 @@
+/* 数字地标 公司介绍 css */
+.typing {
+	 user-select: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: 0.5%  auto;
+	z-index: -1;
+	text-indent: 2rem;
+	font-size: 24px;
+	padding: 1% 2%;
+	width: 92%;
+	letter-spacing: 4px;
+	word-wrap:break-word;
+	min-height: 150px;
+	border-radius: 6px;
+	color: #f1f1f1;
+	background-image: url(../../../../public/imges/dad.png);
+	background-size: 100% 100%;
+}
+
+@keyframes myfirstBottom
+{
+	from {bottom: -1000px;}
+	to { bottom: 0;}
+}
+@keyframes diaphaneity
+{
+	from {opacity: 1;}
+	to {opacity: 0;}
+}

@@ -1,0 +1,207 @@
+/* 首页+ 导航栏 css */
+.index_home{
+}
+/* 导航栏 */
+.index_home .navigation{
+    position: fixed;
+	z-index: 100;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+	background-image: url(../../../public/imges/building/bei/shang.png);
+	background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	overflow: hidden;
+}
+.navigation .navigation_ul{
+	/* margin-top: .5%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.navigation .navigation_ul .navigation_ul_menu{
+	position: relative;
+	display: flex;
+}
+
+.navigation .navigation_left{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 20%;
+	/* background-image: url(../../../public/imges/building/bei/zuo.png); */
+	/* background-size: 100% 100%; */
+}
+.navigation .navigation_right{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 20%;
+	/* background-image: url(../../../public/imges/building/bei/you.png); */
+	/* background-size: 100% 100%; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.navigation .navigation_right .navigation_tips_name{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+/* 提示 */
+.navigation .navigation_right .navigation_tips{
+	cursor: pointer;
+	width: 20px;
+	height: 23px;
+	background-image: url(../../../public/imges/building/ico/lingSheng.png);
+	background-size: 100% 100%;
+	
+}
+
+.navigation .navigation_right .date{
+	position: relative;
+	margin-top: 5px;
+	display: flex;
+	margin-left: auto;
+	margin-right: 3%;
+	width: 60%;
+	justify-content: right;
+}
+.navigation .navigation_right .date .date_text{
+	margin: 0 5px;
+	font-size: 12px;
+	color: #0798d7;
+}
+
+.navigation_name{
+	cursor: pointer;
+	margin-right: 3%;
+	padding: 0 3%;
+	font-size: 14px;
+	color: #fff;
+}
+.navigation .navigation_ul .navigation_li{
+    /* margin: 0 3px; */
+    position: relative;
+    z-index: 1;
+    width: 120px; 
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    /* background-color: aliceblue; */
+    background: url('../../../public/imges/Button.png') no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.navigation .navigation_ul .navigation_li_Right {
+    background: url('../../../public/imges/you_button.png') no-repeat;
+    background-size: 100% 100%;
+}
+.navigation .navigation_ul .navigation_li_te{
+	background: url('../../../public/imges/Button2.png') no-repeat;
+	background-size: 100% 100%;
+}
+.navigation .navigation_ul .navigation_li_Right_te{
+	background: url('../../../public/imges/you_button2.png') no-repeat;
+	background-size: 100% 100%;
+}
+.navigation .navigation_ul .navigation_li:hover{
+    background: url('../../../public/imges/Button2.png') no-repeat;
+    background-size: 100% 100%;
+}
+.navigation .navigation_ul .navigation_li_Right:hover{
+    background: url('../../../public/imges/you_button2.png') no-repeat;
+    background-size: 100% 100%;
+}
+.navigation .navigation_ul .navigation_main{
+	position: relative;
+    height: 100%;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navigation .navigation_ul .navigation_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 280px;
+   font-size: 20px;
+   height: 95%;
+   padding-bottom: 5%;
+   color: #09b7ff;
+   font-size: 22px;
+   font-weight: 700;
+   /* background-color: rgba(255,255,255,.4); */
+}
+.navigation .navigation_ul .imgs_setting{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    margin: auto;
+    width: 75%;
+    height: 55%;
+    background: url('../../../public/imges/main_title.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 内容 */
+.index_home .index_content{
+    height: 91%;
+    position: relative;
+}
+.index_content_model{
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* .index_home .index_content .index_left{
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 26%;
+    height:  calc(100% - 80px);
+    
+}
+.index_home .index_content .index_right{
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 26%;
+    height:  calc(100% - 80px);
+} */
+
+
+
+
+
+@keyframes imgsSettingTop
+{
+	from {top: -400px;}
+	to {top: 0;}
+}
+
+@keyframes navigationBottom
+{
+	from {bottom: -1000px;}
+	to {bottom: 0;}
+}
+
+

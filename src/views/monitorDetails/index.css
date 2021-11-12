@@ -1,0 +1,283 @@
+/* 监控详情视频 css */
+.monitor_details{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+/* 应急指挥 */
+.monitor_command{
+	cursor: pointer;
+	position: absolute;
+	left: 1.8%;
+	top: 85px;
+	font-size: 12px;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #f00b0e;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+.monitor_command:active{
+	background-color: #454a60;
+}
+/* 左 */
+.monitor_details_left{
+	position: absolute;
+	top: 122px;
+	left: 1%;
+	width: 60%;
+	height: calc(96% - 102px);
+	background: url(../../../public/imges/building/supervise/xiangqin/zuobjt.png);
+	background-size: 100% 100%;
+}
+.monitor_details_left_title{
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	right: 2%;
+	width: 96%;
+	height: 6%;
+	/* background-color: rgba(255,255,255,.4); */
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.monitor_details_left_play{
+	position: absolute;
+	top: 8%;
+	left: 2%;
+	right: 2%;
+	width: 96%;
+	height: calc(95% - 8%);
+}
+.monitor_details_video{
+	height: 100%;
+	width: 100%;
+}
+
+
+.monitor_details_left_title .monitor_title{
+	font-size: 16px;
+	color: #fff;
+}
+.monitor_details_left_title .monitor_circuit{
+	font-size: 12px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.monitor_details_left_title .monitor_circuit .history_monitor_button{
+	cursor: pointer;
+	margin-left: 15px;
+	width: 100px;
+	height: 55%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #0676a8;
+	border-radius: 5px;
+	user-select: none;
+}
+.monitor_details_left_title .monitor_circuit .history_monitor_button:active{
+	background-color: rgba(0,0,0,.3);
+}
+
+
+/* 右 */
+.monitor_details_right{
+	position: absolute;
+	top: 122px;
+	right: 1%;
+	width: 37%;
+	height: calc(96% - 102px);
+	background: url(../../../public/imges/building/supervise/xiangqin/youbeijingtu.png);
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.monitor_details_right .monitor_title{
+	display: flex;
+	margin-top: 3%;
+	height: 8%;
+	margin-left: 5%;
+	margin-right: 5%;
+	/* background-color: rgba(255,255,255,.2); */
+	justify-content: space-between;
+	align-items: center;
+}
+
+.monitor_details_right .monitor_title .monitor_lis_title{
+	font-size: 16px;
+	color: #fff;
+	
+}
+.monitor_details_right .monitor_title .monitor_lis_number{
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.monitor_details_right .monitor_title .monitor_lis_number .text{
+	font-size: 12px;
+	color: #fff;
+}
+.monitor_details_right .monitor_title .monitor_lis_number .number{
+	margin-left: 10px;
+	width: 34px;
+	height: 60%;
+	background-image: url(../../../public/imges/building/supervise/imgs/xiangshuliang.png);
+	background-size: 100% 100%;
+	display: flex;
+	font-size: 24px;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+.monitor_details_right .monitor_choice{
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.monitor_details_right .monitor_choice .monitor_choice_li{
+	cursor: pointer;
+	width: 112px;
+	height: 25px;
+	background-image: url(../../../public/imges/building/supervise/imgs/annui2.png);
+	background-size: 100% 100%;
+	font-size: 12px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.monitor_details_right .monitor_choice .monitor_choice_li_te{
+	background-image: url(../../../public/imges/building/supervise/imgs/annui.png);
+	background-size: 100% 100%;
+}
+
+/* 监控视频列表 */
+.monitor_details_right .monitor_list{
+	position: relative;
+	height: calc(86% - 25px);
+	margin: 0 5%;
+	padding-top: 2%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.monitor_details_right .monitor_list .monitor_list_ul{
+	overflow-y: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.monitor_details_right .monitor_list .monitor_list_li{
+	cursor: pointer;
+	margin: 5px .8%;
+	width: 48%;
+	height: 240px;
+	background-image: url(../../../public/imges/building/supervise/imgs/shipingtu.png);
+	background-size: 100% 100%;
+}
+
+.monitor_details_right .monitor_list .monitor_list_li .monitor_list_li_title{
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	height: 14%;
+	margin: 0 6%;
+	/* background-color: rgba(255,255,255, .4); */
+}
+.monitor_details_right .monitor_list .monitor_list_li .monitor_list_li_title .text{
+	font-size: 13px;
+	color: #fff;
+}
+.monitor_details_right .monitor_list .monitor_list_li .monitor_list_li_title .text2{
+	margin-left: 10px;
+	font-size: 12px;
+	color: #00ff4b;
+	display: flex;
+	align-items: center;
+}
+.monitor_details_right .monitor_list .monitor_list_li .monitor_list_li_title .text2 .b{
+	margin-left: 3px;
+	height: 8px;
+	width: 8px;
+	background-color: #00ff4b;
+	border-radius: 8px;
+}
+.monitor_details_right .monitor_list .monitor_list_li .monitor_list_li_title .text1{
+	margin-left: 10px;
+	font-size: 12px;
+	color: #f00;
+	display: flex;
+	align-items: center;
+}
+.monitor_details_right .monitor_list .monitor_list_li .monitor_list_li_title .text1 .b{
+	margin-left: 3px;
+	height: 8px;
+	width: 8px;
+	background-color: #f00;
+	border-radius: 8px;
+}
+
+.monitor_details_right .monitor_list .monitor_list_li .list_video{
+	margin: 0 6%;
+	margin-top: 1%;
+	height: 77%;
+	/* background-color: rgba(255,255,255,.6); */
+	background-image: url(../../../public/imges/lixian.png);
+	background-size: 100% 100%;
+}
+
+/* 返回 */
+.monitor_monitor_return{
+	cursor: pointer;
+	position: absolute;
+	top: 90px;
+	left: 2%;
+	width: 30px;
+	height: 20px;
+	background-image: url(../../../public/imges/building/ico/fanhui.png);
+	background-size: 100% 100%;
+}
+
+
+/* 监控回放视频 */
+.monitor_playback_video{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.7);
+}
+
+
+
+
+@keyframes monitorDetailsRight
+{
+	from {right: -800px;}
+	to {right: 1%;}
+}
+
+@keyframes monitorDetailsLeft
+{
+	from {left: -1000px;}
+	to {left: 1%;}
+}
+
+@keyframes monitorListRight
+{
+	from {right: -1000px;}
+	to {right: 0;}
+}
+

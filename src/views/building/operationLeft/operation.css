@@ -1,0 +1,672 @@
+/* 智慧楼宇 左 操作功能栏 css */
+.operation{
+	 user-select: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0;
+}
+.operation .operation_li{
+	cursor: pointer;
+	width: 48px;
+	margin: 5px 5%;
+	height: 44px;
+	border-radius: 10px;
+	position: relative;
+}
+.operation .operation_li img{
+	width: 44px;
+	height: 100%;
+}
+.operation .operation_li .operation_li_name{
+	position: absolute;
+	display: none;
+	right: -38px;
+	bottom: 0;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	background-color: rgba(255,255,255,1);
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	border-radius: 3px;
+}
+.operation .operation_li:hover .operation_li_name{
+	display: block;
+}
+/* 开关按钮 */
+.operation .operation_button{
+	position: fixed;
+	top: 90px;
+	right: 23%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 28px;
+	cursor: pointer;
+}
+.operation .operation_button span{
+	margin: 0 5px;
+	font-size: 14px;
+	line-height: 14px;
+	height: 14px;
+	color: #01aaff;
+	
+}
+.operation .operation_button .operation_button_ico{
+	width: 16px;
+	height: 14px;
+	background-image: url(../../../../public/imges/building/control/exhibition.png);
+	background-size: 100% 100%;
+}
+.operation .operation_button .operation_button_ico2{
+	width: 16px;
+	height: 14px;
+	background-image: url(../../../../public/imges/building/control/collect.png);
+	background-size: 100% 100%;
+}
+
+.operation .operation_return{
+	cursor: pointer;
+	position: fixed;
+	top: 90px;
+	left: 23%;
+	width: 35px;
+	height: 20px;
+	background: url(../../../../public/imges/building/ico/fanhui.png);
+	background-size: 100% 100%;
+}
+
+/* 标题*/
+.operation_menu_title{
+	margin: 1% 6%;
+	font-size: 14px;
+	color: #fff;
+	height: 44px;
+	display: flex;
+	align-items: center;
+}
+.operation_menu_title b{
+	width: 4px;
+	height: 20px;
+	background-image: url(../../../../public/imges/building/ico/biao.png);
+	background-size: 100% 100%;
+}
+.operation_menu_title span{
+	margin-left: 8px;
+	font-size: 14px;
+	height: 14px;
+	line-height: 14px;
+}
+
+/* 框 */
+.operation .operation_column{
+	/* height: 100%; */
+}
+.operation .operation_column .operation_right{
+	position: fixed;
+	right: 24%;
+	top: 128px;
+	width: 20%;
+	height: calc(75% - 128px);
+	/* background-color: #00D650; */
+	background-image: url(../../../../public/imges/building/control/display.png);
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+}
+.operation .operation_column .operation_right .operation_menu{
+	height: 150px;
+	width: 100%;
+	/* background-color: #fff; */
+}
+.operation .operation_column .operation_right .operation_menu .operation_menu_ul{
+	cursor: pointer;
+	margin: 0 6%;
+	display: flex;
+	/* justify-content: space-around; */
+}
+.operation .operation_column .operation_right .operation_menu .operation_menu_ul .operation_menu_li{
+	margin: 0 2%;
+	padding: 0 10px;
+	font-size: 12px;
+	background-color: #007ffe;
+	height: 26px;
+	line-height: 26px;
+	color: #fff;
+	border-radius: 5px;
+}
+.operation .operation_column .operation_right .operation_menu .operation_menu_ul .operation_menu_li_te {
+	background-color: #e3a23a;
+}
+/* 列表 */
+.operation .operation_column .operation_right .operation_list{
+	flex: 1;
+	margin-bottom: 1%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	
+	/* background-color: #007FFE; */
+}
+.operation .operation_column .operation_right .device_list_catalogue{
+	margin: 0 6%;
+	width: 88%;
+	height: 28px;
+	line-height: 28px;
+	display: flex;
+	color: #fff;
+	font-size: 13px;
+}
+/* 菜单 */
+.operation .operation_column .operation_right .device_list_catalogue span:nth-child(1){
+	text-align: center;
+	width: 15%;
+}
+.operation .operation_column .operation_right .device_list_catalogue span:nth-child(2){
+	text-align: center;
+	width: 25%;
+}
+.operation .operation_column .operation_right .device_list_catalogue span:nth-child(3){
+	text-align: center;
+	width: 35%;
+}
+.operation .operation_column .operation_right .device_list_catalogue span:nth-child(4){
+	text-align: center;
+	width: 25%;
+}
+.operation .operation_column .operation_right .device_list_ul{
+	cursor: pointer;
+	overflow: auto;
+	margin: 0 6%;
+	width: 88%;
+	border-top: 1px solid #fff;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	/* background-color: #007FFE; */
+}
+.operation .operation_column .operation_right .device_list_ul .device_list_li{
+	border-bottom: 1px solid #fff;
+	height: 37px;
+	line-height: 37px;
+	width: 100%;
+	display: flex;
+	font-size: 12px;
+	display: flex;
+	color: #fff;
+}
+.operation .operation_column .operation_right .device_list_ul .device_list_li .device_list_li_span:nth-child(1){
+	text-align: center;
+	width: 15%;
+}
+.operation .operation_column .operation_right .device_list_ul .device_list_li .device_list_li_span:nth-child(2){
+	text-align: center;
+	width: 25%;
+}
+.operation .operation_column .operation_right .device_list_ul .device_list_li .device_list_li_span:nth-child(3){
+	text-align: center;
+	width: 35%;
+}
+.operation .operation_column .operation_right .device_list_ul .device_list_li .device_list_li_span:nth-child(4){
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.operation .operation_column .operation_right .device_list_ul .device_list_li .device_list_li_span img{
+	width: 24px;
+	height: 26px;
+}
+
+/* 左边操作 */
+.operation .operation_column .operation_left{
+	position: fixed;
+	left: 24%;
+	top: -138px;
+	/* top: 128px; */
+	width: 15%;
+	height: calc(32.5%);
+	/* background-color: #00D650; */
+	background-image: url(../../../../public/imges/building/control/zuo_display.png);
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.operation .operation_column .operation_left .operation_left_panel{
+	margin-top: 6%;
+	height: 34px;
+	line-height: 34px;
+	width: 70%;
+	background-color: #017eff;
+	text-align: center;
+	font-size: 14px;
+	/* font-weight: 700; */
+	color: #fff;
+	border-radius: 5px;
+}
+.operation .operation_column .operation_left .operation_left_ul{
+	margin-top: 3%;
+	width: 80%;
+}
+.operation .operation_column .operation_left .operation_left_ul .operation_li {
+	height: 24px;
+	width: 100%;
+	font-size: 14px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+.operation .operation_column .operation_left .operation_left_ul .operation_li b{
+	width: 18px;
+	height: 18px;
+}
+.operation .operation_column .operation_left .operation_left_ul .operation_li:nth-child(1) b{
+	background-image: url(../../../../public/imges/building/ico/qidong.png);
+	background-size: 100% 100%;
+}
+.operation .operation_column .operation_left .operation_left_ul .operation_li:nth-child(2) b{
+	background-image: url(../../../../public/imges/building/ico/yunxing.png);
+	background-size: 100% 100%;
+}
+.operation .operation_column .operation_left .operation_left_ul .operation_li:nth-child(3) b{
+	background-image: url(../../../../public/imges/building/ico/shengbei.png);
+	background-size: 100% 100%;
+}
+.operation .operation_column .operation_left .operation_left_ul .operation_li:nth-child(4) b{
+	background-image: url(../../../../public/imges/building/ico/wengdu.png);
+	background-size: 100% 100%;
+}
+.operation .operation_column .operation_left .operation_left_ul .operation_li:nth-child(5) b{
+	background-image: url(../../../../public/imges/building/ico/yaqiang.png);
+	background-size: 100% 100%;
+}
+.operation .operation_column .operation_left .operation_left_ul .operation_li:nth-child(6) b{
+	background-image: url(../../../../public/imges/building/ico/gaoYa.png);
+	background-size: 100% 100%;
+}
+.operation .operation_column .operation_left .operation_left_ul .operation_li span{
+	margin-left: 10px;
+}
+/* 左边操作 关闭 */
+.operation .operation_column .operation_left .operation_left_close {
+	cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	background-color: #007FFE;
+	background: url(../../../../public/imges/building/ico/cha.png) no-repeat center;
+	background-size: 30% 30%;
+}
+
+/* 底部操作 */
+.operation .operation_column .operation_lower{
+	position: fixed;
+	left: 24%;
+	right: 24%;
+	bottom: 1%;
+	width: 52%;
+	height:  calc(36.5% - 128px);
+	/* background-color: #007AFF; */
+	background-image: url(../../../../public/imges/building/control/bottom.png);
+	background-size: 100% 100%;
+	display: flex;
+}
+.operation .operation_column .operation_lower .operation_lower_left{
+	margin-left: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	width: 56%;
+	background: url(../../../../public/imges/building/control/tu.png) no-repeat center;
+	background-size: 100% 80%;
+	/* background-color: rgba(0,0,0,0.4); */
+}
+.operation .operation_column .operation_lower .operation_lower_right{
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	width: 38%;
+	/* background-color: rgba(255,0,0,0.4); */
+}
+
+.operation .operation_column .operation_lower .operation_lower_right .waterValve_ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	/* background-color: #00D650; */
+}
+.operation .operation_column .operation_lower .operation_lower_right .waterValve_ul .waterValve_li{
+	width: 48%;
+	height: 18px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #fff;
+	background-color: rgba(20,28,49,.5);
+}
+/* 关闭 左边操作 */
+.operation .operation_column .operation_lower .operation_left_close{
+	cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 5px;
+	width: 30px;
+	height: 30px;
+	background-color: #007FFE;
+	background: url(../../../../public/imges/building/ico/cha.png) no-repeat center;
+	background-size: 40% 40%;
+}
+
+ 
+/* 能耗 */
+.operation .consumption_column{
+	position: fixed;
+	top: 128px;
+	left: 25%;
+	right: 25%;
+	width: 50%;
+	height: calc(100% - 140px);
+	
+}
+/* 上 */
+.operation .consumption_column .consumption_top{
+	height: 12%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+/* 累计总数 */
+.operation .consumption_column .consumption_top .consumption_cumulative{
+	width: 45%;
+	height: 100%;
+	background-image: url(../../../../public/imges/building/control/nenghao/leiji.png);
+	background-size: 100% 100%;
+}
+.operation .consumption_column .consumption_top .consumption_cumulative .cumulative_text{
+	float: right;
+	width: 80%;
+	height: 100%;
+	/* background-color: #007AFF; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.operation .consumption_column .consumption_top .consumption_cumulative .cumulative_text span:nth-child(1){
+	height: 18px;
+	color: #29bffe;
+}
+.operation .consumption_column .consumption_top .consumption_cumulative .cumulative_text span:nth-child(2){
+	margin-top: 4%;
+	font-size: 24px;
+	font-weight: 700;
+	color: #0ff9b4;
+}
+/* 年度总数 */
+.operation .consumption_column .consumption_top .consumption_year{
+	width: 45%;
+	height: 100%;
+	background-image: url(../../../../public/imges/building/control/nenghao/lianDu.png);
+	background-size: 100% 100%;
+}
+.operation .consumption_column .consumption_top .consumption_year .year_text{
+	float: right;
+	width: 80%;
+	height: 100%;
+	/* background-color: #007AFF; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.operation .consumption_column .consumption_top .consumption_year .year_text span:nth-child(1){
+	height: 18px;
+	color: #29bffe;
+}
+.operation .consumption_column .consumption_top .consumption_year .year_text span:nth-child(2){
+	margin-top: 4%;
+	font-size: 24px;
+	font-weight: 700;
+	color: #0ff9b4;
+}
+
+/* 中间 */
+.operation .consumption_middle{
+	height: 64%;
+	width: 100%;
+	display: flex;
+	/* background-color: #007AFF; */
+}
+/* 中间 标题 */
+.operation .consumption_middle .consumption_title{
+	margin: 4% 0 0 8%;
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+	color: #fff;
+	/* background-color: #007AFF; */
+}
+
+/* 中 上 */
+.operation .consumption_middle .consumption_middle_left{
+	width: 28%;
+	margin-top: 4%;
+	margin-bottom: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.operation .consumption_middle .consumption_middle_left .consumption_middle_li{
+	width: 90%;
+	height: 24%;
+	background: url(../../../../public/imges/building/control/nenghao/fengXuan.png);
+	background-size: 100% 100%;
+}
+.operation .consumption_middle .consumption_middle_li .consumption_middle_container{
+	margin-left: 8%;
+	margin-right: 8%;
+	height: calc(90% - 35px);
+	display: flex;
+	
+}
+.operation .consumption_middle .consumption_middle_li .consumption_middle_container .left_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+	height: 100%;
+	/* background-color: #00FFFF */
+}
+.operation .consumption_middle .consumption_middle_li .consumption_middle_container .left_container .text_li{
+	color: #fff;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	display: flex;
+}
+.operation .consumption_middle .consumption_middle_li .consumption_middle_container .left_container .text_li span{
+	margin-left: 15px;
+	font-size: 13px;
+	color: #ffd401;
+}
+
+.operation .consumption_middle .consumption_middle_left .right_container{
+	width: 30%;
+	height: 100%;
+	/* height: 100%; */
+	/* background-color: #007AFF; */
+}
+
+
+/* 中 中 */
+.operation .consumption_middle .consumption_middle_middle{
+	width: 44%;
+	height: 100%;
+	/* background-color: #fff; */
+	position: relative;
+}
+.operation .consumption_middle .consumption_middle_middle .consumption_middle_analysis{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 60%;
+	height: 70%;
+	background: url(../../../../public/imges/building/control/display.png);
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.operation .consumption_middle .consumption_middle_middle .consumption_middle_analysis .analysis_title{
+	margin-top: 5%;
+	font-size: 20px;
+	color: #ffe44f;
+}
+.operation .consumption_middle .consumption_middle_middle .consumption_middle_analysis .analysis_content{
+	margin: 0 4%;
+	display: flex;
+	height: 50%;
+	/* background-color: #00FF00; */
+	align-items: center;
+}
+.operation .consumption_middle .consumption_middle_middle .consumption_middle_analysis .analysis_content .analysis_content_left{
+	width: 40%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.operation .consumption_middle .consumption_middle_middle .consumption_middle_analysis .analysis_content .analysis_content_left .analysis_content_title{
+	font-size: 14px;
+	color: #fff;
+}
+.operation .consumption_middle .consumption_middle_middle .consumption_middle_analysis .analysis_content .analysis_content_left .analysis_content_li{
+	font-size: 12px;
+	color: #fff;
+	display: flex;
+}
+.operation .consumption_middle .consumption_middle_middle .consumption_middle_analysis .analysis_content .analysis_content_left .analysis_content_li span{
+	margin-left: 10px;
+	color: #4980a7;
+}
+.operation .consumption_middle .consumption_middle_middle .consumption_middle_analysis .analysis_content .analysis_content_right{
+	width: 60%;
+	height: 80%;
+	/* background-color: #007AFF; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.operation .consumption_middle .consumption_middle_middle .consumption_middle_analysis .analysis_content .analysis_content_right img{
+	height: 90%;
+	width: 95%;
+}
+
+/* 告警 统计图 */
+.operation .consumption_middle .consumption_middle_middle .consumption_middle_analysis .police{
+	margin: 0 4%;
+	height: 30%;
+	width: 92%;
+	/* background-color: #00D650 */
+}
+.operation .consumption_middle .consumption_middle_middle .consumption_middle_analysis .police .police_title{
+	margin-left: 3%;
+	font-size: 14px;
+	height: 14px;
+	line-height: 14px;
+	color: #fff;
+}
+.operation .consumption_middle .consumption_middle_middle .consumption_middle_analysis .police .police_chart{
+	width: 100%;
+	height: calc(100% - 14px);
+}
+
+/* 中 右 */
+.operation .consumption_middle .consumption_middle_right{
+	width: 28%;
+	margin-top: 4%;
+	margin-bottom: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.operation .consumption_middle .consumption_middle_right .consumption_middle_li{
+	margin-left: auto;
+	width: 90%;
+	height: 24%;
+	background: url(../../../../public/imges/building/control/nenghao/fengXuan.png);
+	background-size: 100% 100%;
+}
+
+/* 底部 */
+.operation .consumption_bottom{
+	height: 24%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	/* background-color: #00D650; */
+}
+.operation .consumption_bottom .consumption_bottom_li{
+	width: 40%;
+	height: 80%;
+	background: url(../../../../public/imges/building/control/nenghao/tuBiao.png);
+	background-size: 100% 100%;
+}
+.operation .consumption_bottom .consumption_bottom_li .consumption_bottom_title{
+	display: flex;
+	margin: 2% 5% 0 5%;
+	height: 28px;
+	line-height: 28px;
+	justify-content: space-between;
+}
+.operation .consumption_bottom .consumption_bottom_li .consumption_bottom_title .bottom_title{
+	font-size: 12px;
+	color: #cbcbcb;
+}
+.operation .consumption_bottom .consumption_bottom_li .consumption_bottom_title .specific_date{
+	font-size: 12px;
+	color: #cbcbcb;
+}
+.operation .consumption_bottom .consumption_bottom_li .consumption_bottom_title .consumption_bottom_choice_ul{
+	width: 25%;
+	font-size: 12px;
+	color: #cbcbcb;
+	display: flex;
+	justify-content: space-around;
+}
+.operation .consumption_bottom .consumption_bottom_li .consumption_bottom_title .consumption_bottom_choice_ul .consumption_bottom_choice_li{
+	border-bottom: 2px solid #286993;
+}
+.operation .consumption_bottom .consumption_bottom_li .consumption_bottom_title .consumption_bottom_history{
+	font-size: 12px;
+	color: #cbcbcb;
+}
+.operation .consumption_bottom .consumption_bottom_li .consumption_bottom_statistical{
+	width: 100%;
+	height: 70%;
+}
+
+
+@keyframes operationLeft
+{
+	from {left: -1000px;}
+	to {left: 0;}
+}

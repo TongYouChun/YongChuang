@@ -1,0 +1,247 @@
+/* 智慧楼宇 右 统计图 css */
+.right_buiding {
+	padding-top: 80px;
+	width: 100%;
+	height: calc(100% - 80px);
+	background-image: url(../../../../public/imges/building/bei/you.png);
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	user-select: none;
+}
+
+.right_buiding .chart_li {
+	height: 24%;
+	width: 94%;
+	position: relative;
+	opacity: 0;
+}
+
+.right_buiding .chart_li .chart_li_img {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 100%;
+	height: 25px;
+	background: url(../../../../public/imges/biaoti.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.right_buiding .chart_li .chart_title {
+	margin: 1.5% 0 0 2%;
+	font-size: 13px;
+	color: #dfefef;
+	/* color: #000000; */
+}
+
+.right_buiding .chart_li .chart_content {
+	margin-top: 2.5%;
+	height: 82%;
+	width: 100%;
+	/* background-color: #fff; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+/* 防盗报警*/
+.right_buiding .chart_li .chart_content .steal_li{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.right_buiding .chart_li .chart_content .steal_li .branch_li{
+	flex: 1;
+	margin: 0.5% 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.right_buiding .chart_li .chart_content .steal_li .branch_li .steal_img{
+	width: 88px;
+	height: 58px;
+}
+.right_buiding .chart_li .chart_content .steal_li .branch_li .steal_img img{
+	width: 100%;
+	height: 100%;
+}
+.right_buiding .chart_li .chart_content .steal_li .branch_li .steal_text{
+	/* margin-left: 18px; */
+	font-size: 14px;
+	height: 38px;
+	line-height: 38px;
+	color: #0ab6ff;
+}
+.right_buiding .chart_li .chart_content .steal_li .branch_li .steal_text span{
+	margin-left: 5px;
+	color: #cfb007;
+}
+
+
+/* 视频监控 */
+.right_buiding .chart_li  .chart_content .building_li{
+	display: flex;
+}
+.right_buiding .chart_li  .chart_content .building_li .building_text{
+	margin-left: 10px;
+	width: 60px;
+	font-size: 12px;
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+}
+.right_buiding .chart_li  .chart_content .building_li .building_chart{
+	background-color: rgba(7,55,104,0.2);
+	border: 2px solid rgba(7,55,104,0.4);
+	margin-left: 8px;
+	border-radius: 10px;
+	width: 65%;
+	/* padding: 0.2% 0.6%; */
+	height: 14px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.right_buiding .chart_li  .chart_content .building_li .building_chart span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+	line-height: 14px;
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+}
+.right_buiding .chart_li  .chart_content .building_li .building_chart .chart_display{
+	height: 100%;
+	border-radius: 10px;
+}
+.right_buiding .chart_li  .chart_content .building_li:nth-child(1) .building_chart .chart_display{
+	background-image: linear-gradient(to left, rgba(201,140,4,1) , rgba(241,229,85,1));
+}
+.right_buiding .chart_li  .chart_content .building_li:nth-child(2) .building_chart .chart_display{
+	background-image: linear-gradient(to left, rgba(3,85,156,1) , rgba(27,223,252,1));
+}
+.right_buiding .chart_li  .chart_content .building_li:nth-child(3) .building_chart .chart_display{
+	background-image: linear-gradient(to left, rgba(62,80,255,1) , rgba(163,243,219,1));
+}
+
+.right_buiding .chart_li  .chart_content .building_li .building_value{
+	margin-left: 5px;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #dfefef;
+}
+
+/* 车辆管理 */
+.right_buiding .chart_li .chart_content .vehicle{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: space-around;
+}
+.right_buiding .chart_li .chart_content .vehicle_left{
+	height: 59%;
+	width: 45%;
+	background-image: url(../../../../public/imges/building/imgs/total.png);
+	background-size: 100% 100%;
+}
+.right_buiding .chart_li .chart_content .vehicle_left .vehicle_content{
+	display: flex;
+	flex-direction: column;
+	float: right;
+	align-items: center;
+	justify-content: center;
+	margin-top: 17%;
+	height: 48%;
+	width: 58%;
+	font-size: 14px;
+	color: #fff;
+	/* background-color: #fff; */
+}
+.right_buiding .chart_li .chart_content .vehicle_left .vehicle_content span{
+	font-size: 18px;
+	font-weight: 600;
+	color: #02abfe;
+}
+
+.right_buiding .chart_li .chart_content .vehicle_right{
+	height: 59%;
+	width: 45%;
+	background-image: url(../../../../public/imges/building/imgs/use.png);
+	background-size: 100% 100%;
+}
+.right_buiding .chart_li .chart_content .vehicle_right .vehicle_content{
+	display: flex;
+	flex-direction: column;
+}
+.right_buiding .chart_li .chart_content .vehicle_right .vehicle_content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 17%;
+	height: 48%;
+	width: 50%;
+	font-size: 14px;
+	color: #fff;
+	/* background-color: #fff; */
+}
+.right_buiding .chart_li .chart_content .vehicle_right .vehicle_content span{
+	font-size: 18px;
+	font-weight: 600;
+	color: #00d650;
+}
+
+
+/* 水位 */
+.right_buiding .chart_li .chart_content .stage{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	/* background-color: #fff; */
+	align-items: center;
+}
+
+.right_buiding .chart_li .chart_content .stage .stage_ico{
+	height: 65%;
+}
+.right_buiding .chart_li .chart_content .stage .stage_ico img{
+	height: 100%;
+}
+
+.right_buiding .chart_li .chart_content .stage .stage_chart{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.right_buiding .chart_li .chart_content .stage .stage_chart .stage_chart_li{
+	width: 33%;
+	height: 75%;
+	/* background-color: #00FF00; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.right_buiding .chart_li .chart_content .stage .stage_chart .stage_chart_li .chart_title{
+	font-size: 12px;
+	height: 12px;
+	line-height: 12px;
+	text-align: center;
+}
+
+@keyframes rightBuiding
+{
+	from {right: -1000px;}
+	to {right: 0;}
+}

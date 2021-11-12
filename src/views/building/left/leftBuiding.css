@@ -1,0 +1,195 @@
+/* 智慧楼宇 左 统计图 css */
+.left_buiding {
+	padding-top: 80px;
+	width: 100%;
+	height: calc(100% - 80px);
+	background-image: url(../../../../public/imges/building/bei/zuo.png);
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	user-select: none;
+}
+
+.left_buiding .chart_li {
+	height: 24%;
+	width: 94%;
+	position: relative;
+	opacity: 0;
+}
+
+.left_buiding .chart_li .chart_li_img {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 100%;
+	height: 25px;
+	background: url(../../../../public/imges/biaoti.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.left_buiding .chart_li .chart_title {
+	margin: 1.5% 0 0 2%;
+	font-size: 13px;
+	color: #dfefef;
+}
+
+.left_buiding .chart_li .chart_content {
+	margin-top: 2.5%;
+	height: 82%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+/* 消防系统 */
+.left_buiding .chart_li .chart_content .building_li {
+	display: flex;
+}
+
+.left_buiding .chart_li .chart_content .building_li .building_text {
+	margin-left: 10px;
+	width: 60px;
+	font-size: 12px;
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+}
+
+.left_buiding .chart_li .chart_content .building_li .building_chart {
+	background-color: rgba(7, 55, 104, 0.2);
+	border: 2px solid rgba(7, 55, 104, 0.4);
+	margin-left: 8px;
+	border-radius: 10px;
+	width: 70%;
+	height: 14px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.left_buiding .chart_li .chart_content .building_li .building_chart span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+	line-height: 14px;
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.left_buiding .chart_li .chart_content .building_li .building_chart .chart_display {
+	height: 100%;
+	border-radius: 10px;
+}
+.left_buiding .chart_li .chart_content .building_li:nth-child(1) .building_chart .chart_display{
+	 background-image: linear-gradient(to left, rgba(201,140,4,1) , rgba(241,229,85,1));
+}
+.left_buiding .chart_li .chart_content .building_li:nth-child(2) .building_chart .chart_display{
+	 background-image: linear-gradient(to left, rgba(3,85,156,1) , rgba(27,223,252,1));
+}
+.left_buiding .chart_li .chart_content .building_li:nth-child(3) .building_chart .chart_display{
+	 background-image: linear-gradient(to left, rgba(62,80,255,1) , rgba(163,243,219,1));
+}
+.left_buiding .chart_li .chart_content .building_li:nth-child(4) .building_chart .chart_display{
+	 background-image: linear-gradient(to left, rgba(236,227,68,1) , rgba(27,223,252,1));
+}
+
+.left_buiding .chart_li .chart_content .building_li .building_value {
+	margin-left: 5px;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #dfefef;
+}
+
+/* 能源管理 */
+.left_buiding .chart_li .chart_content.energy_li {
+	display: flex;
+	flex-direction: column;
+}
+
+.left_buiding .chart_li .chart_content .energy_li .energy_text {
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 6px;
+	color: #dfeef3;
+}
+
+.left_buiding .chart_li .chart_content .energy_li .energy_text span {
+	margin-left: 5px;
+	font-size: 14px;
+	color: #ffdf00;
+}
+
+.left_buiding .chart_li .chart_content .energy_li .energy_container {
+	display: flex;
+}
+
+.left_buiding .chart_li .chart_content .energy_li .energy_chart {
+	height: 20px;
+	width: 100%;
+	background-color: rgba(7, 55, 104, 0.2);
+	border: 2px solid rgba(7, 55, 104, 0.4);
+	border-radius: 8px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.left_buiding .chart_li .chart_content .energy_li .energy_chart .energy_display {
+	height: 100%;
+	border-radius: 8px;
+}
+
+.left_buiding .chart_li .chart_content .energy_li .energy_chart span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.left_buiding .chart_li .chart_content .energy_li .energy_value {
+	margin-left: 5px;
+	color: #dfefef;
+	font-size: 12px;
+	line-height: 22px;
+	font-weight: 700;
+}
+
+/* 交配电 */
+.left_buiding .chart_li .chart_content .distributing {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.left_buiding .chart_li .chart_content .distributing .distributing_li {
+	width: 24%;
+	height: 50%;
+}
+
+@keyframes leftBuiding {
+	from {
+		left: -1000px;
+	}
+
+	to {
+		left: 0;
+	}
+}

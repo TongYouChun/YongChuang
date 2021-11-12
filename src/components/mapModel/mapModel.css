@@ -1,0 +1,50 @@
+/* 数字地标 3d模型 加载 css */
+.pro {
+	position: fixed;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 22;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pro .el-progress {
+	position: absolute;
+	bottom: 16px;
+	width: 200px;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.el-progress__text {
+	color: #fff;
+}
+
+.cameraPosition{
+	position: fixed;
+	top: 90px;
+	left: 23%;
+	width: 100px;
+	height: 28px;
+	line-height: 28px;
+	color: #666;
+	text-align: center;
+	font-size: 12px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+.cameraAnimation{
+	position: fixed;
+	top: 120px;
+	left: 23%;
+	width: 100px;
+	height: 28px;
+	line-height: 28px;
+	color: #666;
+	text-align: center;
+	font-size: 12px;
+	background-color: #fff;
+	border-radius: 3px;
+}

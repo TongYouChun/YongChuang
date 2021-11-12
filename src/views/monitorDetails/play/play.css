@@ -1,0 +1,102 @@
+/* 视频播放 css */
+.video_play{
+	height: 100%;
+	width: 100%;
+}
+.video_play .video_Playback{
+	height: 90%;
+	width: 100%;
+	background-color: rgba(0,0,0,.8);
+	display: flex;
+	flex-direction: column;
+}
+
+.video_Playback_type{
+	height: 100%;
+	width: 100%;
+	background-image: url(../../../../public/imges/4K/lixian2.png);
+	background-size: 100% 100%;
+}
+.video_Playback_type4{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.video_Playback_type4 .video_Playback_type4_li{
+	width: 49%;
+	margin: .5%;
+	background-image: url(../../../../public/imges/4K/lixian2.png);
+	background-size: 100% 100%;
+}
+
+.video_Playback_type9{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.video_Playback_type9 .video_Playback_type9_li{
+	width: 32.33%;
+	margin: .5%;
+	background-image: url(../../../../public/imges/4K/lixian2.png);
+	background-size: 100% 100%;
+}
+
+.video_operation{
+	height: 10%;
+	width: 100%;
+}
+
+.video_operation .monitor_details_video_operation{
+	height: 100%;
+	width: 100%;
+	/* background-color: rgba(255,255,255,.5); */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.video_operation .monitor_details_video_operation .monitor_details_operation_li{
+	display: flex;
+}
+.video_operation .monitor_details_video_operation .monitor_details_operation_li .span{
+	cursor: pointer;
+	margin: 0 8px;
+	width: 30px;
+	height: 30px;
+}
+.video_operation .monitor_details_video_operation .monitor_details_operation_li .span1{
+	background-image: url(../../../../public/imges/building/supervise/xiangqin/dan.png);
+	background-size: 100% 100%;
+}
+.video_operation .monitor_details_video_operation .monitor_details_operation_li .span2{
+	background-image: url(../../../../public/imges/building/supervise/xiangqin/sipin.png);
+	background-size: 100% 100%;
+}
+.video_operation .monitor_details_video_operation .monitor_details_operation_li .span3{
+	background-image: url(../../../../public/imges/building/supervise/xiangqin/jiupin.png);
+	background-size: 100% 100%;
+}
+.video_operation .monitor_details_video_operation .monitor_details_operation_li .span4{
+	background-image: url(../../../../public/imges/building/supervise/xiangqin/manping.png);
+	background-size: 100% 100%;
+}
+.video_operation .monitor_details_video_operation .monitor_details_operation_li .span5{
+	background-image: url(../../../../public/imges/building/supervise/xiangqin/qiepin.png);
+	background-size: 100% 100%;
+}
+.video_operation .monitor_details_video_operation .monitor_details_operation_li .span6{
+	background-image: url(../../../../public/imges/building/supervise/xiangqin/tupian.png);
+	background-size: 100% 100%;
+}
+.video_operation .monitor_details_video_operation .monitor_details_operation_li .span7{
+	background-image: url(../../../../public/imges/building/supervise/xiangqin/baocun.png);
+	background-size: 100% 100%;
+}
+.video_operation .monitor_details_video_operation .monitor_details_operation_li .span8{
+	background-image: url(../../../../public/imges/building/supervise/xiangqin/xiazai.png);
+	background-size: 100% 100%;
+}

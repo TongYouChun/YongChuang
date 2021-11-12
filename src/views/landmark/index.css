@@ -1,0 +1,45 @@
+/* 数字地标 css */
+.landmark .index_left{
+    position: fixed;
+	z-index: -1;
+	opacity: 1;
+    left: 0;
+    top: 0;
+    width: 24%;
+    height:  100%;
+    
+}
+.landmark .index_right{
+    position: fixed;
+	z-index: -1;
+	opacity: 1;
+    right: 0;
+    top: 0;
+    width: 24%;
+    height: 100%;
+}
+.landmark .writing_right{
+	position: fixed;
+	z-index: -1;
+	opacity: 1;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height:  28%;
+	/* background-color: #007AFF; */
+}
+
+@keyframes myfirstLeft
+{
+	from {left: -1000px;}
+	to {left: 0;}
+}
+
+@keyframes myfirstRight
+{
+	from {right: -1000px;}
+	to {right: 0;}
+}
+
+
+ 

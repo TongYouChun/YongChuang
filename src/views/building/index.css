@@ -1,0 +1,48 @@
+/* 智慧楼宇 css */
+.building .index_left{
+    position: fixed;
+	z-index: 3;
+	opacity: 1;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    
+}
+.building .index_right{
+    position: fixed;
+	z-index: 2;
+	opacity: 1;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+}
+
+.building .floor_right{
+	position: fixed;
+	z-index: 2;
+	opacity: 1;
+	 right: 20%;
+	 width: 4%;
+	 height: 100%;
+	 /* background-color: #fff; */
+	 
+	 bottom: 0;
+}
+.building .operation_left{
+	position: fixed;
+	z-index: 2;
+	opacity: 1;
+	 left: 20%;
+	 width: 98px;
+	 height: 50%;
+	 /* background-color: #fff; */
+	 bottom: 0;
+	 top: 0;
+	 margin: auto 0;
+	 overflow: hidden;
+}
+
+
+ 

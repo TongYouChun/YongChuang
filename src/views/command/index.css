@@ -1,0 +1,407 @@
+/* 应急指挥 css */
+.command{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+/* 左 */
+.command .command_left{
+	position: absolute;
+	top: 102px;
+	left: 1%;
+	width: 19%;
+	height: calc(97% - 102px);
+	background-image: url(../../../public/imges/building/supervise/zuoKuang.png);
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+}
+.command .command_left .command_left_title{
+	display: flex;
+	justify-content: space-between;
+	height: 4%;
+	/* background-color: rgba(100,100,100,.6); */
+}
+.command .command_left .command_left_title .left_title_li_left{
+	width: 60%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	color: #fff;
+}
+.command .command_left .command_left_title .left_title_li_right{
+	cursor: pointer;
+	width: 26%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	color: #fff;
+}
+/* 列表 */
+.command .command_left .command_left_ul{
+	height: 96%;
+	/* background-color: #fff; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+
+}
+.command .command_left .command_left_ul .command_left_ul_title{
+	margin-top: 2%;
+	width: 90%;
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+	color: #e5e8f1;
+}
+.command .command_left .command_left_ul .command_left_ul_button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	color: #e5e8f1;
+	font-size: 14px;
+	height: 40px;
+	width: 90%;
+	background-image: url(../../../public/imges/building/supervise/xinagmu.png);
+	background-size: 100% 100%;
+}
+.command .command_left .command_left_ul .command_left_list{
+	overflow-y: auto;
+	margin-top: 3%;
+	margin-bottom: 5%;
+	flex: 1;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+}
+.command .command_left .command_left_ul .command_left_list .list_li{
+	margin-bottom: 5px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_father_li{
+	cursor: pointer;
+	display: flex;
+	width: 100%;
+	height: 40px;
+	background-image: url(../../../public/imges/building/supervise/caidan.png);
+	background-size: 100% 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.command .command_left .command_left_ul .command_left_list .list_li_content{
+	margin-left: 3%;
+	display: flex;
+	align-items: center;
+	/* background-color: rgba(255,255,255, .6); */
+	width: calc(88% - 30px );
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_li_chart{
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_li_chart img{
+	height: 25px;
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_li_text{
+	margin-left: 10px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #fff;
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_li_ico{
+	margin-right: 3%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_li_ico img{
+	width: 13px;
+	height: 13px;
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_engineering_ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_engineering_ul .list_engineering_li{
+	cursor: pointer;
+	margin: 3px 0;
+	display: flex;
+	width: 100%;
+	height: 40px;
+	background-image: url(../../../public/imges/building/supervise/caidan3.png);
+	background-size: 100% 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_engineering_ul .list_engineering_li:hover{
+	background-image: url(../../../public/imges/building/supervise/caidan2.png);
+	background-size: 100% 100%;
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_engineering_ul .list_engineering_li .list_li_chart img{
+	height: 20px;
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_engineering_ul .list_engineering_li .list_li_icos{
+	margin-right: 3%;
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_engineering_ul .list_engineering_li .list_li_icos .imgs1{
+	height: 16px;
+}
+.command .command_left .command_left_ul .command_left_list .list_li .list_engineering_ul .list_engineering_li .list_li_icos .imgs2{
+	margin-left: 10px;
+	height: 16px;
+}
+
+/* 右 */
+.command .command_right{
+	position: absolute;
+	top: 102px;
+	right: 1%;
+	width: 78%;
+	height: calc(97% - 102px);
+	background-image: url(../../../public/imges/building/supervise/beijing.png);
+	background-size: 100% 100%;
+}
+.command .command_right .command_project_name{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 8%;
+	/* background-color: rgba(255,255,255,0.4); */
+}
+.command .command_right .command_project_name .project_name_li{
+	display: flex;
+	font-size: 12px;
+	color: #fff;
+}
+.command .command_right .command_project_name .title{
+	margin-left: 2%;
+	font-size: 16px;
+}
+.command .command_right .command_project_name .channel{
+	margin-right: 2%;
+}
+.command .command_right .command_project_container{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* 弹框 */
+.command_spring_frame{
+	position: absolute;
+	top: 1.5%;
+	left: 0;
+	width: 100%;
+	height: 98.5%;
+	background-color: rgba(0,0,0,.2);
+	overflow: hidden;
+}	
+.command_spring_frame .spring_frame{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 45%;
+	height: 70%;
+	background-image: url(../../../public/imges/building/supervise/zhihui/faqi.png);
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+}
+.command_spring_frame .spring_frame .frame_title{
+	width: 30%;
+	height: 10%;
+	/* background-color: rgba(255,255,255,.4); */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	color: #fff;
+}
+.command_spring_frame .spring_frame .frame_meeting{
+	margin: 0 7%;
+	margin-top: 4%;
+	display: flex;
+	align-items: center;
+	height: 10%;
+	width: 86%;
+	/* background-color: rgba(255,255,255,.5); */
+}
+.command_spring_frame .spring_frame .frame_meeting .meeting_text{
+	/* margin-left: 4%; */
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+}
+.command_spring_frame .spring_frame .frame_meeting .meeting_name{
+	margin-left: 2%;
+	width: calc(98% - 64px);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* background-color: rgba(200,0,200,.4); */
+}
+.command_spring_frame .spring_frame .frame_meeting .meeting_name input{
+	height: 26px;
+	width: 97%;
+	border: 1px solid #08c9ff;
+	background-color: rgba(0,0,0,0);
+	border-radius: 5px;
+	padding-left: 3%;
+	color: #fff;
+	outline:none;
+}
+.command_spring_frame .spring_frame .frame_meeting .meeting_name input::-webkit-input-placeholder{
+	color: #d1d1d1;
+}
+.command_spring_frame .spring_frame .frame_content{
+	margin: 0 7%;
+	/* width: 100%; */
+	height: calc(60% - 26px);
+	display: flex;
+	justify-content: space-between;
+}
+.command_spring_frame .spring_frame .frame_content .frame_content_left{
+	width: 39%;
+	height: 100%;
+	/* background-color: rgba(26,26,26,.6); */
+}
+.command_spring_frame .spring_frame .frame_content .frame_content_left .frame_content_left_title{
+	height: 10%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.command_spring_frame .spring_frame .frame_content .frame_content_left .frame_content_left_title b{
+	margin-left: 4%;
+	height: 15px;
+	width: 15px;
+	background-image: url(../../../public/imges/building/supervise/zhihui/soss.png);
+	background-size: 100% 100%;
+}
+.command_spring_frame .spring_frame .frame_content .frame_content_left .frame_content_left_title .frame_content_text{
+	margin-left: 6px;
+	font-size: 12px;
+	color: #fff;
+	
+}
+.command_spring_frame .spring_frame .frame_content .frame_content_left .personnel{
+	display: flex;
+	flex-direction: column;
+	height: calc(100% - 10%);
+	width: 100%;
+	overflow: hidden;
+}
+.command_spring_frame .spring_frame .frame_content .frame_content_left .personnel .personnel_tree{
+	overflow-y: auto;
+}
+.command_spring_frame .spring_frame .frame_content_right{
+	width: 59%;
+	height: 100%;
+	/* background-color: rgba(26,26,26,.8); */
+}
+.command_spring_frame .spring_frame .frame_content_right .frame_content_right_title{
+	height: 10%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	color: #fff;
+}
+.command_spring_frame .spring_frame .frame_content_right .frame_content_right_frame{
+	overflow: hidden;
+	height: 90%;
+	width: 100%;
+	background-image: url(../../../public/imges/building/supervise/zhihui/kuangzi.png);
+	background-size: 100% 100%;
+}
+.command_spring_frame .spring_frame .frame_content_right .frame_content_right_frame .frame_text_ul{
+	margin: 4% .5%;
+	height: 92%;
+	overflow: auto;
+	color: #fff;
+}
+.command_spring_frame .spring_frame .frame_content_right .frame_content_right_frame .frame_text_li{
+	margin: 5px 3%;
+	padding-left: 15px;
+	height: 25px;
+	font-size: 12px;
+	line-height: 25px;
+	background-image: url(../../../public/imges/building/supervise/zhihui/dangekuang.png);
+	background-size: 100% 100%;
+}
+.command_spring_frame .spring_frame .frame_launch{
+	user-select: none;
+	cursor: pointer;
+	position: absolute;
+	bottom: 2.5%;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	height: 7%;
+	width: 17%;
+	color: #2583b6;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #2583b6;
+	border-radius: 5px;
+}
+.command_spring_frame .spring_frame .frame_launch:active{
+	background-color: rgba(37,131,182,.4);
+	color: #ddd;
+}
+.spring_frame .close_frame{
+	cursor: pointer;
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	width: 20px;
+	height: 20px;
+	background: url(../../../public/imges/building/supervise/zhihui/guanbilang.png) no-repeat center;
+	background-size: 80% 80%;
+}
+
+
+
+
+
+
+
+@keyframes commandRight
+{
+	from {right: -1500px;}
+	to {right: 1%;}
+}
+
+@keyframes commandLeft
+{
+	from {left: -500px;}
+	to {left: 1%;}
+}
+
+
+/* 弹窗 */
+@keyframes springFrameRight
+{
+	from {right: -1000px;}
+	to {right: 0;}
+}

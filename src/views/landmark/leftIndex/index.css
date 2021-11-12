@@ -1,0 +1,89 @@
+/* 数字地标 左 数字地标 css */
+.lefl-index{
+   padding-top: 80px;
+   width: 100%;
+   height: calc(100% - 80px);
+    background-image: url(../../../../public/imges/building/bei/zuo.png);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.lefl-index .chart_li{
+    height: 32%;
+    width: 94%;
+	position: relative;
+	opacity: 0;
+  
+}
+.lefl-index .chart_li .chart_li_img{
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	background: url(../../../../public/imges/biaoti.png) no-repeat;
+	background-size: 100% 100%;
+}
+.lefl-index .chart_li .chart_title{
+    margin: 2.5% 0 0 2%;
+    font-size: 13px;
+    color: #dfefef;
+}
+.lefl-index .chart_li  .chart_content{
+    margin-top: 5.5%;
+    height: 83%;
+    width: 100%;
+    /* background-color: #fff; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.lefl-index .chart_li  .chart_content .chart_content_li{
+	height: 45%;
+	width: 100%;
+	background: url(../../../../public/imges/xiao.png) no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.lefl-index .chart_li  .chart_content .chart_content_li .operating_li{
+	width: 33.3%;
+	display: flex;
+	justify-content: center;
+}
+.lefl-index .chart_li  .chart_content .chart_content_li .operating_li img{
+	width: 40px;
+	height: 45px;
+}
+.lefl-index .chart_li  .chart_content .chart_content_li .operating_li .operating_content{
+	margin-left: 5px;
+	font-size: 12px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.lefl-index .chart_li  .chart_content .chart_content_li .operating_li .operating_content .operating_name{
+	font-size: 12px;
+	color: #fff;
+}
+.lefl-index .chart_li  .chart_content .chart_content_li .operating_li .operating_content .operating_quantity{
+	font-size: 16px;
+	line-height: 16px;
+	color: #09b7fc;
+	display: flex;
+	justify-content: space-between;
+}
+.lefl-index .chart_li  .chart_content .chart_content_li .operating_li .operating_content .operating_quantity span{
+	font-size: 12px;
+	color: #57adce;
+}
+
+@keyframes myfirst
+{
+	from {left: -1000px;}
+	to {left: 0;}
+}

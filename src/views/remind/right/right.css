@@ -1,0 +1,83 @@
+/* 报警页面 右 统计图 css */
+.right_remind {
+	padding-top: 80px;
+	width: 100%;
+	height: calc(100% - 80px);
+	background-image: url(../../../../public/imges/building/bei/you.png);
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	user-select: none;
+}
+
+.right_remind .chart_li {
+	height: 48%;
+	width: 94%;
+	position: relative;
+	opacity: 0;
+}
+
+.right_remind .chart_li .chart_li_img {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 100%;
+	height: 25px;
+	background: url(../../../../public/imges/biaoti.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.right_remind .chart_li .chart_title {
+	margin: 1.5% 0 0 2%;
+	font-size: 13px;
+	color: #dfefef;
+}
+
+.right_remind .chart_li .chart_content {
+	margin-top: 5%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 90%;
+
+}
+.right_remind .chart_li .chart_content  .chart_content_li{
+	height: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.right_remind .chart_li .chart_content  .chart_content_li .chart_content_li_chart{
+	width: 33%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.right_remind .chart_li .chart_content  .chart_content_li .chart_content_li_chart .li_chart{
+	height: 70%;
+	width: 100%;
+}
+.right_remind .chart_li .chart_content  .chart_content_li .chart_content_li_chart .li_chart_text{
+	height: 30%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.right_remind .chart_li .chart_content  .chart_content_li .chart_content_li_chart .li_chart_text .name_text{
+	font-size: 12px;
+	color: #fff;
+}
+.right_remind .chart_li .chart_content  .chart_content_li .chart_content_li_chart .li_chart_text .number_text{
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+@keyframes policeRight
+{
+	from {right: -1000px;}
+	to {right: 0;}
+}

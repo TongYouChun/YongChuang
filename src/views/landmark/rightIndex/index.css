@@ -1,0 +1,120 @@
+/* 数字地标 右 统计图 css */
+.right-index{
+	padding-top: 80px;
+    width: 100%;
+    height: calc(100% - 80px);
+    background-image: url(../../../../public/imges/building/bei/you.png);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.right-index .chart_li{
+    height: 32%;
+    width: 94%;
+    position: relative;
+    opacity: 0;
+}
+.right-index .chart_li .chart_li_img{
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	background: url(../../../../public/imges/biaoti.png) no-repeat;
+	background-size: 100% 100%;
+}
+.right-index .chart_li .chart_title{
+    margin: 2.5% 0 0 2%;
+    font-size: 13px;
+	line-height: 13px;
+	height: 13px;
+    color: #dfefef;
+}
+.right-index .chart_li .chart_content{
+    margin-top: 4.5%;
+    height: 83%;
+    width: 100%;
+    /* background-color: #fff; */
+}
+.right-index .chart_li .content_flex{
+	display: flex;
+	/* position: relative; */
+}
+.right-index .chart_li  .chart_content .personnel_li{
+	width: 50%;
+	height: 100%;
+}
+.right-index .chart_li  .chart_content .chart_switch{
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+	display: flex;
+	cursor: pointer;
+	/* border-bottom: 1px solid rgba(0,0,0,0.2); */
+}
+.right-index .chart_li  .chart_content .chart_switch .switch_li{
+	width: 80px;
+	text-align: center;
+	
+}
+.right-index .chart_li  .chart_content .chart_switch .switch_li_te{
+	color: #007AFF;
+}
+/* 设备 */
+.right-index .chart_li  .chart_content .content_equipment{
+	width: 80%;
+	height: 68%;
+	background-image: url(../../../../public/imges/equipment.png);
+	background-size: 100% 100%;
+	/* position: relative; */
+	display: flex;
+}
+.right-index .chart_li  .chart_content .chart_content_left{
+	width: 48%;
+	height: 94%;
+	font-size: 24px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right-index .chart_li  .chart_content .chart_content_right{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.right-index .chart_li  .chart_content .chart_content_right .content_right_title{
+	color: #f5ca02;
+	font-size: 14px;
+	text-align: right;
+}
+.right-index .chart_li  .chart_content .chart_content_right .content_right_content{
+	margin-top: 5%;
+	margin-left: 10px;
+	height: 95%;
+	/* background-color: #fff; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.right-index .chart_li  .chart_content .chart_content_right .content_right_content .li{
+	height: 28px;
+	line-height: 28px;
+	display: flex;
+	font-size: 14px;
+	color: #fff;
+}
+.right-index .chart_li  .chart_content .chart_content_right .content_right_content .li span{
+	font-size: 16px;
+	color: #f5ca02;
+}
+
+@keyframes myfirstRight
+{
+	from {right: -1000px;}
+	to {right: 0;}
+}

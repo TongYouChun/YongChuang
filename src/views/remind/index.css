@@ -1,0 +1,20 @@
+/* 报警页面 css */
+.remind .index_left{
+    position: fixed;
+	z-index: 3;
+	opacity: 1;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100% ;
+    
+}
+.remind .index_right{
+    position: fixed;
+	z-index: 2;
+	opacity: 1;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height:  100%;
+}

@@ -1,0 +1,450 @@
+/* 报警页面 左 统计图 css */
+.left_remind {
+	padding-top: 80px;
+	width: 100%;
+	height: calc(100% - 80px);
+	background-image: url(../../../../public/imges/building/bei/zuo.png);
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	user-select: none;
+}
+
+.left_remind .chart_li {
+	height: 48%;
+	width: 94%;
+	position: relative;
+	opacity: 0;
+}
+
+.left_remind .chart_li .chart_li_img {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 100%;
+	height: 25px;
+	background: url(../../../../public/imges/biaoti.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.left_remind .chart_li .chart_title {
+	margin: 1.5% 0 0 2%;
+	font-size: 13px;
+	color: #dfefef;
+}
+
+.left_remind .chart_li .chart_content {
+	margin-top: 5%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 90%;
+}
+
+.left_remind .chart_li .chart_content .chart_state_name {
+	display: flex;
+	align-items: center;
+}
+
+.left_remind .chart_li .chart_content .chart_state_name .chart_state_li {
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.left_remind .chart_li .chart_content .chart_state_name .chart_state_li .chart_state_ico {
+	width: 20px;
+	height: 20px;
+}
+
+.left_remind .chart_li .chart_content .chart_state_name .chart_state_li .chart_state_ico img {
+	width: 100%;
+	height: 100%;
+}
+
+.left_remind .chart_li .chart_content .chart_state_name .chart_state_li .name {
+	margin-left: 3%;
+	height: 22px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #fff;
+}
+
+.left_remind .chart_li .chart_content .chart_state_list {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+/* 列表 标题 */
+.left_remind .chart_li .chart_content .chart_state_list .list_title {
+	display: flex;
+	height: 34px;
+	align-items: center;
+	border-bottom: 2px solid #59cfff;
+}
+
+.left_remind .chart_li .chart_content .chart_state_list .list_title .title_li {
+	flex: 1;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+}
+
+/* 列表 内容 */
+.left_remind .chart_li .chart_content .chart_state_list .list_ul {
+	overflow-y: auto;
+	flex: 1;
+	/* background-color: #007AFF; */
+	display: flex;
+	flex-direction: column;
+}
+
+.left_remind .chart_li .chart_content .chart_state_list .list_ul .list_ul_li {
+	cursor: pointer;
+	height: 34px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px dashed #487fbf;
+}
+
+.left_remind .chart_li .chart_content .chart_state_list .list_ul .list_ul_li .list_police_li {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+	line-height: 34px;
+	color: #fff;
+}
+
+.left_remind .chart_li .chart_content .chart_state_list .list_ul .list_ul_li .list_police_li img {
+	width: 20px;
+	height: 20px;
+}
+
+
+/* 建筑照明 */
+.left_remind .chart_li .chart_content .lighting{
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+.left_remind .chart_li .chart_content .lighting_left{
+	width: 60%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.left_remind .chart_li .chart_content .lighting_left img{
+	width: 100%;
+}
+.left_remind .chart_li .chart_content .lighting_right{
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.left_remind .chart_li .chart_content .lighting_right .lighting_right_ul{
+	display: flex;
+	flex-direction: column;
+	height: 30%;
+	justify-content: space-around;
+}
+.left_remind .chart_li .chart_content .lighting_right .lighting_right_ul .lighting_right_li{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 12px;
+	color: #fff;
+}
+.left_remind .chart_li .chart_content .lighting_right .lighting_right_ul .lighting_right_li .lighting_right_colour{
+	height: 10px;
+	width: 10px;
+	border-radius: 2px;
+}
+
+
+/* 告警弹框 */
+.remind_frame{
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background-color: rgba(0,0,0,.4);
+}
+.remind_frame .frame{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 42%;
+	height: 50%;
+	background: url(../../../../public/imges/building/police/tankuanghong.png);
+	background-size: 100% 100%;
+}
+
+.remind_frame .frame .frame_top{
+	position: absolute;
+	top: 4%;
+	right: 3%;
+	margin-left: auto;
+	width: 100px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #a80516;
+	border-radius: 5px;
+}
+.remind_frame .frame .frame_middle{
+	position: absolute;
+	top: calc(8% + 35px);
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.remind_frame .frame .frame_middle .middle_left{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+.remind_frame .frame .frame_middle .middle_left .frame_ico{
+	height: 60%;
+}
+.remind_frame .frame .frame_middle .middle_left .frame_ico img{
+	height: 100%;
+}
+.remind_frame .frame .frame_middle .middle_left .frame_text{
+	margin-top: 15px;
+	font-size: 16px;
+	color: #fff;
+}
+.remind_frame .frame .frame_middle .middle_right{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.remind_frame .frame .frame_middle .middle_right .middle_text{
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #fff;
+}
+
+/* 弹框按钮 */
+.remind_frame .frame .frame_bottom{
+	position: absolute;
+	bottom: 14%;
+	right: 2%;
+	display: flex;
+	justify-content: right;
+	height: 40px;
+}
+
+.remind_frame .frame .frame_bottom .Button_text{
+	cursor: pointer;
+	margin: 0 2%;
+	height: 40px;
+	width: 150px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 5px;
+}
+.remind_frame .frame .frame_bottom .Button_text:nth-child(1){
+	background-color: rgba(254,0,0, .2); 
+	border: 1px solid rgba(254,0,0, 1);
+}
+.remind_frame .frame .frame_bottom .Button_text:nth-child(2){
+	background-color: rgba(255,252,0, .2); 
+	border: 1px solid rgba(255,252,0, 1);
+}
+.remind_frame .frame .frame_bottom .Button_text:nth-child(3){
+	background-color: rgba(11,183,255, .2); 
+	border: 1px solid rgba(11,183,255, 1);
+}
+.remind_frame .frame .frame_bottom .Press1:active{
+	background-color: rgba(254,0,0, .6); 
+}
+ .remind_frame .frame .frame_bottom .Press2:active{
+ 	background-color: rgba(255,252,0, .6); 
+ }
+ .remind_frame .frame .frame_bottom .Press3:active{
+ 	background-color: rgba(11,183,255, .6); 
+ }
+ 
+/* 告警详情 */
+.remind_frame .remind_frame_details{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 22%;
+	height: 60%;
+	background: url(../../../../public/imges/building/police/beijinghong.png);
+	background-size: 100% 100%;
+}
+
+/* 上 */
+.remind_frame .remind_frame_details .frame_details_top{
+	margin-top: 7%;
+	display: flex;
+	justify-content: center;
+}
+.remind_frame .remind_frame_details .frame_details_top .frame_details_title{
+	width: 45%;
+	font-size: 14px;
+	line-height: 35px;
+	height: 35px;
+	color: #FFFFFF;
+}
+.remind_frame .remind_frame_details .frame_details_top .frame_details_return{
+	width: 45%;
+	display: flex;
+}
+.remind_frame .remind_frame_details .frame_details_top .frame_details_return span{
+	cursor: pointer;
+	margin-left: auto;
+	height: 35px;
+	width: 120px;
+	line-height: 35px;
+	height: 35px;
+	color: #FFFFFF;
+	background-color: rgba(33,51,152, .4);
+	border: 1px solid rgba(33,51,152, 1);
+	text-align: center;
+	border-radius: 5px;
+}
+
+.remind_frame .remind_frame_details .frame_details_top .frame_details_return span:active{
+	background-color: rgba(33,51,152, .6);
+}
+
+/* 中 */
+.remind_frame .remind_frame_details .frame_details_middle{
+	height: calc(73% - 35px);
+	padding-top: 5%;
+	display: flex;
+	justify-content: center;
+}
+/* 标题 */
+.remind_frame .remind_frame_details .frame_details_middle .frame_details_middle_title{
+	font-size: 14px;
+	color: #fff;
+}
+.remind_frame .remind_frame_details .frame_details_middle .frame_details_middle_left{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+}
+
+.remind_frame .remind_frame_details .frame_details_middle .frame_details_middle_left .frame_details_middle_li{
+	margin-top: 5%;
+	width: 85%;
+	height: 45%;
+	background-image: url(../../../../public/imges/building/police/kuang.png);
+	background-size: 100% 100%;
+}
+
+.remind_frame .remind_frame_details .frame_details_middle .frame_details_middle_right{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+}
+.remind_frame .remind_frame_details .frame_details_middle .frame_details_middle_right .frame_details_middle_ul{
+	display: flex;
+	height: calc(98% - 14px);
+	align-items: center;
+	flex-wrap: wrap;
+}
+.remind_frame .remind_frame_details .frame_details_middle .frame_details_middle_right .frame_details_middle_ul .frame_details_middle_li_equipment{
+	width: 50%;
+	font-size: 12px;
+	height: 26px;
+	line-height: 26px;
+	color: #fff;
+}
+
+
+/* 下 */
+.remind_frame .remind_frame_details .frame_details_bottom{
+	height: 15%;
+	display: flex;
+	align-items: center;
+}
+.remind_frame .remind_frame_details .frame_details_bottom .frame_details_Button{
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: 6%;
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+	background-color: rgba(121,5,5,.4);
+	border: 1px solid rgba(121,5,5,1);
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 滚动条 */
+::-webkit-scrollbar {
+		width: 3px;
+		height: 3px;
+	}
+
+::-webkit-scrollbar-track {
+		border-radius: 3px;
+		box-shadow: inset 0 0 2px rgba(7, 73, 142, .6);
+		background-color: #f8f8f8;
+
+	}
+
+::-webkit-scrollbar-thumb {
+		border-radius: 3px;
+		box-shadow: inset 0 0 2px rgba(7, 73, 142, .6);
+		background-color: #334157;
+	}
+	
+	
+@keyframes policeLeft
+{
+	from {left: -1000px;}
+	to {left: 0;}
+}

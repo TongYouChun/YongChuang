@@ -1,0 +1,100 @@
+/* 历史回放 css */
+.history_playback{
+	position: absolute;
+	/* top: 5%; */
+	left: 0;
+	right: 0;
+	bottom: 5%;
+	margin: auto;
+	width: 60%;
+	height: 80%;
+	background-image: url(../../../../public/imges/lishi/shipinbjing1.png);
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+}
+/* 标题 */
+.history_playback .history_playback_title{
+	margin-left: 28.5%;
+	width: 39%;
+	height: 6%;
+	/* background-color: rgba(0,0,255,.3); */
+	font-size: 24px;
+	color: #00b7ff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 上 */
+.history_playback .history_playback_top{
+	margin: 0 auto;
+	margin-top: 3%;
+	height: 10%;
+	width: 90%;
+	/* background-color: rgba(255,0,0, .3); */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.history_playback .history_playback_top .history_playback_button{
+	user-select: none;
+	cursor: pointer;
+	margin-left: 20px;
+	width: 56px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 13px;
+	color: #038ac4;
+	border: 1px solid #038ac4;
+	border-radius: 5px;
+}
+.history_playback .history_playback_top .history_playback_button:active{
+	background-color: rgba(3,138,196, 0.3);
+	color: #cccfb2;
+}
+
+/* 下 */
+.history_playback .history_playback_bottom{
+	margin: 0 5%;
+	height: 74%;
+	width: 90%;
+	background-image: url(../../../../public/imges/4K/lixian2.png);
+	background-size: 100% 100%;
+}
+
+/* 关闭视频 */
+.history_playback .history_playback_close{
+	cursor: pointer;
+	position: absolute;
+	top: 8.5%;
+	right: 1.8%;
+	width: 23px;
+	height: 23px;
+	background-image: url(../../../../public/imges/lishi/chaguanbi.png);
+	background-size: 100% 100%;
+}
+
+/* 操作功能 */
+.history_playback .history_playback_operation{
+	position: absolute;
+	top: 17%;
+	right: 4.5%;
+	height: 75%;
+	width: 3.5%;
+	/* background-color: rgba(255,0,0,.3); */
+}
+.history_playback .history_playback_operation .history_playback_operation_ul{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.history_playback .history_playback_operation .history_playback_operation_ul .history_playback_operation_li{
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.history_playback .history_playback_operation .history_playback_operation_ul .history_playback_operation_li img{
+	width: 25px;
+}

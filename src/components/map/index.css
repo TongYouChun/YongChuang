@@ -1,0 +1,21 @@
+.map_penetration{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	height: 95%;
+	width: 100%;
+}
+.map_penetration_Button{
+	cursor: pointer;
+	position: absolute;
+	top: 4%;
+	left: 0%;
+	z-index: 10;
+	margin-left: 2%;
+	width: 28px;
+	height: 18px;
+	background-image: url(../../../public/imges/building/ico/fanhui.png);
+	background-size: 100% 100%;
+}
