@@ -3,12 +3,12 @@
 	<div class="mapModel">
 		<canvas id="canvas" style="position: absolute; z-index: -100;"></canvas>
 		<!-- <div id="Model_homePage"></div> -->
-		<div class="cameraPosition" @click="clickPosition()">
+		<!-- <div class="cameraPosition" @click="clickPosition()">
 			相机当前位置
-		</div>
-		<div class="cameraAnimation" @click="animationClick()">
+		</div> -->
+		<!-- <div class="cameraAnimation" @click="animationClick()">
 			相机动画
-		</div>
+		</div> -->
 		<div v-if="notHasLoadAll" class="pro">
 			<i class="el-icon-loading loading-icon"> </i>
 			<el-progress :percentage="percentage" :format="format"></el-progress>
